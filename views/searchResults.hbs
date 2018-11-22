@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper"> 
+    {{#each search}}
+        {{#if this.images.1.url}}
+            <div class="flex-container" style="background-image: url({{this.images.1.url}});"> 
+            {{else}}
+        <div class="flex-container" style="background-image: url('./images/new_spotify_icon.png');"> 
+        {{/if}}
+            <div class="name">
+                <h2>{{this.name}}</h2>
+               <button onclick="location.href='/albums/{{this.id}}'">View Albums</button> 
+               <a href="/albums/{{this.id}}">See Songs</a>
+            </div>
+        </div>
+    {{/each}}
+ </div>
+
+
+
+{{!-- 
+
+   <button>view albums</button>  --}}
+
+
+
+
+
+
+
+
+
+
+
+{{!-- 
+   <form method="post" action="/searchResults">
+   <div class = "music">
+        {{#each search}}
+            <ul>    
+               <li>{{this.name}}</li>
+               <li>{{this.genres}}</li>
+
+                <li>{{this.type}}</li>
+            </ul>
+                <img src={{this.images.1.url}} alt="">
+        {{/each}}
+    </div> --}}
+
+
+
+
+
+    
+
+            {{!-- <h3>Search Artist</h3>
+                    Search Artist:<br>
+        <input type="text" name="searchResult"><br> --}}
+{{!-- 
+        <button type="submit">Submit</button> --}}
+
+{{!-- </form> --}}
+
+    
+</body> 
+</html>

@@ -1,0 +1,55 @@
+1. create the spotify link to start the API the npm spotify downloded 
+
+
+spotify clinet key 9e735e5e216a4c38a10c3a6170308890
+
+
+Client ID 9e735e5e216a4c38a10c3a6170308890
+Client Secret d9d39c3ec72d44c3a778ad19b4ad7791 
+
+QUESTION  
+Model relationship between documents  Populating and assigning books to authos
+
+one to one and many to many
+
+()  is used for one collection while [()] is used to denote different authots we neet to use different scemas
+to store information with differnt autos for and collect diferent IDS
+
+
+const mongoose = require ('mongoose)
+
+var Book = mongoose.model("book,{
+    title: String,
+    year: String,
+
+
+})
+
+npm install package malte is used to uploag photo
+
+router.post('/upload)
+
+$ npm install --save  multer
+ 
+ 
+ 1st step  install npm malta 
+
+ create a form that enales us send photos 
+
+ <section>
+  <h2>Upload your photo</h2>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="text" name="name">
+    <input type="file" name="photo">
+    <input type="submit" value="Save">
+  </form>
+</section>
+
+create form to uoload photo with a post request like above
+then add post and res,send respond with nothing to chgeck if its working
+
+images are saves in public
+
+
+
+ 
